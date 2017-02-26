@@ -35,6 +35,6 @@
         ],
     "update_xml": [],
     "demo_xml": [],
-    "auto_install": False,
+    "auto_install": True,
     "installable": True
 }
