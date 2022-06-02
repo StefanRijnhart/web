@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2022 Stefan Rijnhart <stefan@opener.amsterdam>
+     License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <template
+        id="assets_backend"
+        name="web_dynamic_statusbar assets"
+        inherit_id="web.assets_backend"
+    >
+        <xpath expr="." position="inside">
+            <script
+                type="text/javascript"
+                src="/web_dynamic_statusbar/static/src/js/web_dynamic_statusbar.js"
+            />
+        </xpath>
+    </template>
+</odoo>
