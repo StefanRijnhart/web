@@ -4,14 +4,20 @@
 */
 
 .o_form_view {
-    .o_form_sheet_bg {
-        max-width: none;
-    }
     .o_form_sheet {
         max-width: $o-form-view-sheet-max-width;
         width: 100%;
         @include media-breakpoint-up(md) {
             margin: $o-sheet-vpadding * 0.2 auto;
         }
+    }
+}
+
+// Set sheet to full width when chatter is forced to bottom
+.o_form_view_container {
+    .o_form_sheet_bg.o_fullwidth,
+    .o_form_sheet_bg.o_fullwidth .o_form_sheet {
+        max-width: none !important;
+        width: auto !important;
     }
 }
